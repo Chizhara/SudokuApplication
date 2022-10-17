@@ -1,0 +1,24 @@
+﻿<Window x:Class="SudokuApplication.windows.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SudokuApplication.windows"
+        mc:Ignorable="d"
+        Title="MenuWindow" Height="auto" Width="325">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="🆂🆄🅳🅾🅺🆄" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28"/>
+
+        <Button x:Name="btnLoadMap" Content="Загрузить игру" Grid.Row="1" Background="Gray" Click="btnLoadMap_Click"/>
+        <Button x:Name="btnCreateMap" Content="Создать игру" Grid.Row="2" Background="DarkGray" Click="btnCreateMap_Click"/>
+        <Button x:Name="btnExit" Content="Выйти" Grid.Row="3" Background="Gray" Click="btnExit_Click"/>
+    </Grid>
+</Window>
